@@ -13,8 +13,8 @@ This script automates the process of updating outdated Homebrew apps on your mac
 Clone the Repository:
 
 ```bash
-git clone https://github.com/darth-assan/applications-updater.git
-cd applications-updater
+git clone https://github.com/darth-assan/auto-apps-updater.git
+cd auto-apps-updater
 ```
 
 ## Install Dependencies:
@@ -43,7 +43,7 @@ RECIPIENT_PHONE_NUMBER=your_recipient_phone_number
 Open your terminal, navigate to the script directory, and run the script:
 
 ```bash
-python script_name.py
+python updater.py
 ```
 
 The script will update outdated Homebrew apps and send an SMS notification via Twilio.
@@ -52,4 +52,22 @@ The script will update outdated Homebrew apps and send an SMS notification via T
 
 Running the script will check for outdated Homebrew apps, update them, and send an SMS notification with the update details using Twilio.
 
-> You can create a cronjob to automatically run the script the script.
+## Automate with Cron Jobs
+
+For the ultimate in hands-free management, set up a cron job to run your script at designated intervals.
+
+- Step 1: Edit Crontab
+
+Open your terminal and type:
+
+```bash
+crontab -e
+```
+
+- Step 2: Add the Cron Job
+
+eg: Insert this line to run your script every Monday at 3:00 PM:
+
+```bash
+0 15 * * 1 /path/to/your/python3 /path/to/your/script.py
+```
