@@ -1,0 +1,47 @@
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# OS or editor-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Virtual environment folders (example: Python's virtualenv)
+venv/
+env/
+env.bak/
+
+# Dependency folders
+node_modules/
+bower_components/
+
+# Log files
+*.log
+
+# Compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Generated folders or files
+__generated__/
+_generated/
+*.generated.*
+
+# Temporary files
+*.tmp
+*.swp
+
+# Local configuration files
+config.local.json
+
+# Secrets and credentials
+.env
+.env.local
+.env.*
+.secret
+secrets.yml
